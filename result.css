@@ -61,9 +61,6 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
-
-
-    
 }
 
  .buttons .nn{
@@ -82,4 +79,9 @@ body{
 
     width: 79%;
 
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

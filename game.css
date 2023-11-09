@@ -46,23 +46,48 @@ hr{
 
 .game{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+
+
+    height: 650px;
+    width: 650px;
+    /* border: 1px red solid; */
+    margin: 0 auto;
 
 }
 
 .numbers{
     display:flex;
+    /* justify-content: center; */
+
+    width: 650px;
+    height: 72.2px;
+    /* border: 1px red solid; */
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.tile{
+    width: 70.2px;
+    height: 70.2px;
+    border: 1px solid rgb(84, 80, 80);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .number{
-    border: 3px white solid;
-    height: 50px;
-    width:40em ;
-    margin-top: 20px;
-    display:flex;
-    justify-content: space-evenly;
-    
+    width: 70.2px;
+    height: 70.2px;
+    border: 1px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quit{
@@ -110,6 +135,14 @@ a{
     font-size: 2em;
 }
 
+.tog{
+    background-color: grey;
+}
+
+.tilecolor{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
 @media only screen and (max-width: 1000px) {
     body{
         overflow: hidden;
@@ -119,7 +152,6 @@ a{
     }
     .scores{
         display: inline-block;
-        border: 1px red solid;
         margin-left: 13vw;
         font-size: 20px;
     }
