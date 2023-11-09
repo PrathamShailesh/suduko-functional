@@ -90,7 +90,7 @@ else if(randomNumber===3){
 
 
 
-let bgm = new Audio("bg.mp3");
+let m = new Audio("bg.mp3");
 bgm.play();
 bgm.loop = true;
 
@@ -137,7 +137,7 @@ function startgame(){
 }
 tog=null
 
-let btn=new Audio("./click.mp3")
+let btn=new Audio("click.mp3")
 function toggle(){
     if(tog!=null){
         tog.classList.remove("tog")
@@ -162,7 +162,7 @@ function checkIfGameFinished() {
 }
 
 let correct = new Audio("correct.mp3")
-let wr=new Audio('/wrong.mp3')
+let wr=new Audio('wrong.mp3')
 
 function select(){
     if(tog){
