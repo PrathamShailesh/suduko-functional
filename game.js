@@ -90,7 +90,7 @@ else if(randomNumber===3){
 
 
 
-let m = new Audio("bg.mp3");
+let bgm = new Audio("bg.mp3");
 bgm.play();
 bgm.loop = true;
 

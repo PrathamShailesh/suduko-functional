@@ -6,7 +6,7 @@ console.log(nickname)
 const win_message=`Congratulations! ${nickname} You've conquered the Sudoku puzzle! Great job!`;
 const lose_message=`You Lost ! Better Luck Next Time ${nickname}`
 
-let lost = new Audio("/lose.mp3")
+let lost = new Audio("lose.mp3")
 
 window.onload = function() {
     const gameState = localStorage.getItem('gameState');
