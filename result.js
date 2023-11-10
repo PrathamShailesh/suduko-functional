@@ -33,7 +33,6 @@ window.onload = function() {
     if (gameState === 'win' ) {
         document.querySelector(".win").innerText = win_message;
         document.querySelector(".try h2").innerText= 'Wrong Tries-'+wrong;
-        // document.querySelector(".time h2").innerText= 'Time Taken-'+time;
         document.querySelector(".time h2").innerText = `Time Taken: ${minutes} : ${seconds} `;
     } else {
         lost.play()
