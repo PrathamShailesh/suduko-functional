@@ -216,7 +216,7 @@ function select() {
 //timer for the game
 function timer() {
   const timer = document.querySelector(".time h2");
-  let timeLeft = 10;
+  let timeLeft = 100*6;
   //converting the time to minutes and seconds
   function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);

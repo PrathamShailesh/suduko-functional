@@ -2,7 +2,6 @@ let name;
 
 //when the player click on play the game should redirect to game page
 document.querySelector('#play-button').addEventListener('click', function(event) {
-    event.preventDefault();
     let name = document.querySelector(".need").value;
     let justname = document.querySelector(".gg").value;
     sessionStorage.setItem('nn',name)
