@@ -16,6 +16,8 @@ var problem3=[
     "-31-52-4-"
 ]
 
+
+
 var solution3=[
     '126437958',
     "895621473",
@@ -28,6 +30,8 @@ var solution3=[
     "731852649"
 ]
 
+
+
 var problem2=[
     "---6--4--",
     "7----36--",
@@ -39,6 +43,8 @@ var problem2=[
     '9-3-6-52-',
     "-2-43-1-8"
 ]
+
+
 
 var solution2=[
     '581672439',
@@ -54,7 +60,6 @@ var solution2=[
 
 
 
-
 var problem=[
     "2--3-----",
     "8-4-62--3",
@@ -67,6 +72,8 @@ var problem=[
     "-----1--2"
 ]
 
+
+
 var solution=[
     "276314958",
     "854962713",
@@ -78,6 +85,8 @@ var solution=[
     "641253879",
     "789641532",
 ]
+
+
 
 if (randomNumber === 2) {
     problem = problem2.slice(); 
@@ -102,6 +111,7 @@ window.onload=function(){
     localStorage
 }
 
+
 function startgame(){
     for(let i=1;i<10;i++){
         const number = document.createElement("div")
@@ -125,19 +135,19 @@ function startgame(){
             if([j]==3 ||[j]==6){
                 tile.style.borderLeft="2px solid black"
             }
-
             tile.id=`${i}-${j}`;
             tile.addEventListener('click',select)
             tile.classList.add("tile")
             document.querySelector(".game").appendChild(tile)
-
         }
     }
-
 }
-tog=null
 
+
+tog=null
 let btn=new Audio("click.mp3")
+
+
 function toggle(){
     if(tog!=null){
         tog.classList.remove("tog")
@@ -147,9 +157,9 @@ function toggle(){
     btn.pause();
     btn.currentTime=0;
     btn.play()
-
-
 }
+
+
 function checkIfGameFinished() {
     if(ans==46){
         localStorage.setItem('gameState', 'win');
@@ -158,8 +168,8 @@ function checkIfGameFinished() {
     if(timer==0){
         localStorage.setItem('gameState','lose')
     }
-
 }
+
 
 let correct = new Audio("correct.mp3")
 let wr=new Audio('wrong.mp3')
@@ -195,7 +205,7 @@ function select(){
 
 function timer(){
 const timer = document.querySelector(".time h2");
-let timeLeft = 10;
+let timeLeft = 100*6;
 function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);
     const secondsDisplay = seconds % 60;

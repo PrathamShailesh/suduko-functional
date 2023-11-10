@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 body{
     font-family: 'Righteous', sans-serif;
     margin: 0;
@@ -11,10 +12,12 @@ body{
     height: 180vh;
 }
 
+
 header{
     text-align: center;
 
 }
+
 
 header h1{
     font-size: 7vw;
@@ -25,11 +28,13 @@ header h1{
     color: transparent; 
 }
 
+
 hr{
     border: 1px grey solid;
     width: 60vw;
     margin-top: -50px;
 }
+
 
 .scores{
     display: flex;
@@ -38,35 +43,32 @@ hr{
     color: red;
 }
 
+
 .board{
     border: 3px black solid;
     height: 40em;
     width:40em ;
 }
 
+
 .game{
     display: flex;
-    /* justify-content: center; */
     flex-wrap: wrap;
-
-
     height: 650px;
     width: 650px;
-    /* border: 1px red solid; */
     margin: 0 auto;
 
 }
+
 
 .numbers{
     display:flex;
-    /* justify-content: center; */
-
     width: 650px;
     height: 72.2px;
-    /* border: 1px red solid; */
     margin: 0 auto;
     flex-wrap: wrap;
 }
+
 
 .tile{
     width: 70.2px;
@@ -79,6 +81,7 @@ hr{
     align-items: center;
 }
 
+
 .number{
     width: 70.2px;
     height: 70.2px;
@@ -90,6 +93,7 @@ hr{
     align-items: center;
 }
 
+
 .quit{
     display:inline-block;
     background-color: rgb(9, 196, 237);
@@ -98,20 +102,24 @@ hr{
     margin: 50px 80px;
 }
 
+
 .quite_icon{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+
 .quite_icon .back{
     margin-right: 10px;
 }
+
 
 a{
     text-decoration: none;
     color: black;
 }
+
 
 .number div{
     border: 1px white solid;
@@ -122,10 +130,12 @@ a{
     font-size: 2em;
 }
 
+
 .board{
     display: grid;
     grid-template-columns: repeat(9,11.12%);
 }
+
 
 .board div{
     border: 1px black solid;
@@ -135,13 +145,16 @@ a{
     font-size: 2em;
 }
 
+
 .tog{
     background-color: grey;
 }
 
+
 .tilecolor{
     background-color: rgba(128, 128, 128, 0.5);
 }
+
 
 @media only screen and (max-width: 1000px) {
     body{

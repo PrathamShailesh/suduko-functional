@@ -1,10 +1,25 @@
 const nickname=localStorage.getItem('playerName')
 
-console.log(nickname)
+const randomNumber = Math.floor(Math.random() * 3) + 1
 
+var win_message2=`Congragulations! ${nickname} you've Solved the Sudoku master and conquered the board!`
+var win_message3=`Congragulations! ${nickname} you've Achieved Sudoku supremacy and cracked the ultimate puzzle!`
+var lose_message2=`You Lost! Back to the drawing board  ${nickname} -you will crack it next time.!`
+var lose_message3=`Bad luck, ${nickname}! The complexity of this puzzle outsmarted you this round.`
 
-const win_message=`Congratulations! ${nickname} You've conquered the Sudoku puzzle! Great job!`;
-const lose_message=`You Lost ! Better Luck Next Time ${nickname}`
+var win_message=`Congratulations! ${nickname} You've conquered the Sudoku puzzle! Great job!`;
+var lose_message=`You Lost ! Better Luck Next Time ${nickname}`
+
+if (randomNumber === 2) {
+    win_message = win_message2.slice(); 
+    lose_message=lose_message2.slice()
+  
+}
+else if(randomNumber===3){
+    win_message=win_message3.slice();
+    lose_message=lose_message3.slice()
+
+}
 
 let lost = new Audio("lose.mp3")
 
