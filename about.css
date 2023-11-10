@@ -6,7 +6,7 @@ body{
 
 .back{
     display: inline-block;
-    background-color: blue;
+    background-color: rgb(24, 213, 255);
     padding: 10px 20px;
     border-radius: 50px;
     position: absolute;
